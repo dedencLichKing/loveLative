@@ -12,7 +12,7 @@
         document.getElementById('go').removeEventListener('click', start);
         promise.then(() => engine.toText('Hi你好呀'))
         .then(() => engine.shake())
-        .then(() => engine.toText('你看这个网页'))
+        .then(() => engine.toText('你看这个'))
         .then(() => engine.shake())
         .then(() => engine.toText('是不是很好玩'))
         .then(() => engine.shake())
