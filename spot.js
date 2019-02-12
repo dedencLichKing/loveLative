@@ -10,15 +10,15 @@
     start();
     function start() {
         document.getElementById('go').removeEventListener('click', start);
-        promise.then(() => engine.toText('Hi你好呀'))
+        promise.then(() => engine.toText('容么么'))
         .then(() => engine.shake())
-        .then(() => engine.toText('你看这个'))
+        .then(() => engine.toText('是你吗'))
         .then(() => engine.shake())
-        .then(() => engine.toText('好玩吗'))
+        .then(() => engine.toText('是不是'))
         .then(() => engine.shake())
-	.then(() => engine.toText('送给你'))
+	.then(() => engine.toText('很厉害呀'))
         .then(() => engine.shake())
-        .then(() => engine.toText('收下它吧'))
+        .then(() => engine.toText('biubiu'))
         .then(() => engine.shake())
 	.then(() => engine.toText('L'))
         .then(() => engine.shake())
