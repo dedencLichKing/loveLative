@@ -4,21 +4,9 @@
         <meta charset=UTF-8>
         <link rel="stylesheet" href="style.css">
     </head>
-    <script src="copy2clipboard.js"></script>
     <body>
         <canvas id="canvas"></canvas>
         <button id="go">click</button>
-        <span class="copy" id="demo" data-clipboard-text="abcdefg >.<" onclick="" style="cursor:pointer;">复制</span>
-        <script type="text/javascript">
-    var clipboard = document.getElementById('#demo');
-    clipboard.addEventListener("click",function (e) {
-        //添加一个单击事件（单击时触发function函数）
-        console.info('Action:', e.action);
-      console.info('Text:', e.text);
-      // console.info('Trigger:', e.trigger);
-      alert('复制成功，复制到的内容是：' + e.text);
-      e.clearSelection();
-    })
   </script>
 
     </body>
