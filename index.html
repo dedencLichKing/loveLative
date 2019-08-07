@@ -4,10 +4,18 @@
         <meta charset=UTF-8>
         <link rel="stylesheet" href="style.css">
     </head>
+    <script src="../js/copy2clipboard.js"></script>
     <body>
         <canvas id="canvas"></canvas>
         <button id="go">click</button>
+        <button class="nav" onclick ="select_all_and_copy(document.getElementById('textCon1'))">
+            点击复制
+        </button>
+        <textarea id="textCon1" readonly="readonly" cols="40" rows="5">
+            我是复制的内容
+        </textarea>
     </body>
+    <script src="../js/copy2clipboard.js"></script>
     <script src="shape.js"></script>
     <script src="spot.js"></script>
 </html>
