@@ -4,18 +4,30 @@
         <meta charset=UTF-8>
         <link rel="stylesheet" href="style.css">
     </head>
-    <script src="../js/copy2clipboard.js"></script>
+    <script type="text/javascript" src="plugins/clipboard/clipboard.min.js"></script>
     <body>
         <canvas id="canvas"></canvas>
         <button id="go">click</button>
-        <button class="nav" onclick ="select_all_and_copy(document.getElementById('textCon1'))">
-            点击复制
-        </button>
-        <textarea id="textCon1" readonly="readonly" cols="40" rows="5">
-            我是复制的内容
-        </textarea>
+   
+        <script type="text/javascript">
+    var clipboard = new ClipboardJS('#demo');
+
+    clipboard.on('success', function(e) {
+      console.info('Action:', e.action);
+      console.info('Text:', e.text);
+      // console.info('Trigger:', e.trigger);
+      alert('复制成功，复制到的内容是：' + e.text);
+      e.clearSelection();
+    });
+
+    clipboard.on('error', function(e) {
+      console.error('Action:', e.action);
+      console.error('Trigger:', e.trigger);
+      alert('复制失败！')
+    });
+  </script>
+
     </body>
-    <script src="../js/copy2clipboard.js"></script>
     <script src="shape.js"></script>
     <script src="spot.js"></script>
 </html>
