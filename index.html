@@ -10,7 +10,7 @@
         <button id="go">click</button>
         <span class="copy" id="demo" data-clipboard-text="abcdefg >.<" onclick="" style="cursor:pointer;">复制</span>
         <script type="text/javascript">
-    var clipboard = new ClipboardJS('#demo');
+    var clipboard = document.getElementById('#demo');
 
     clipboard.on('success', function(e) {
       console.info('Action:', e.action);
