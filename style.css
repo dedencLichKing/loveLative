@@ -19,3 +19,9 @@ body {
     background: -ms-linear-gradient(top,#cbebdb 0,#3794c0 120%);
     background: linear-gradient(top,#cbebdb 0,#3794c0 120%);
 }
+
+#id_text {
+	
+	width: 300px;
+	height: 300px;
+}
