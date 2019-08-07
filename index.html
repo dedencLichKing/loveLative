@@ -1,16 +1,42 @@
 <html>
-    <head>
-        <title>spot light</title>
-        <meta charset=UTF-8>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <canvas id="canvas"></canvas>
-        <button id="go">click</button>
-  </script>
 
-    </body>
-    
-    <script src="shape.js"></script>
-    <script src="spot.js"></script>
+	<head>
+		<title>spot light</title>
+		<meta charset=UTF-8>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+
+	<body>
+		<canvas id="canvas"></canvas>
+		<button id="go">click</button>
+
+		<textarea id="id_text"></textarea>
+		<button type="button" id="id_copy" data-clipboard-target="#id_text" data-clipboard-action="copy">点击复制
+            
+            </button>
+
+	</body>
+
+	<script type="text/javascript">
+		var clipboard = new ClipboardJS('#id_copy');
+
+		clipboard.on('success', function(e) {
+			console.info('Action:', e.action);
+			console.info('Text:', e.text);
+			console.info('Trigger:', e.trigger);
+
+			e.clearSelection();
+		});
+
+		clipboard.on('error', function(e) {
+			console.error('Action:', e.action);
+			console.error('Trigger:', e.trigger);
+		});
+	</script>
+
+	<script src="shape.js"></script>
+	<script src="spot.js"></script>
+
 </html>
