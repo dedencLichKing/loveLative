@@ -10,7 +10,7 @@
     start();
     function start() {
         document.getElementById('go').removeEventListener('click', start);
-        promise.then(() => engine.toText('李'))
+        promise.then(() => engine.toText('刘'))
         .then(() => engine.shake())
 	    .then(() => engine.toText('青'))
         .then(() => engine.shake())
