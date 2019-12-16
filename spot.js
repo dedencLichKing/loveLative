@@ -10,14 +10,14 @@
     start();
     function start() {
         document.getElementById('go').removeEventListener('click', start);
-        promise.then(() => engine.toText('L'))
+        promise.then(() => engine.toText('李'))
         .then(() => engine.shake())
-	    .then(() => engine.toText('O'))
+	    .then(() => engine.toText('青'))
         .then(() => engine.shake())
-	    .then(() => engine.toText('V'))
+	    .then(() => engine.toText('利'))
         .then(() => engine.shake())
-	    .then(() => engine.toText('E'))
-        .then(() => engine.shake())
+	    //.then(() => engine.toText('E'))
+        //.then(() => engine.shake())
 	    .then(() => engine.toText('小'))
         .then(() => engine.shake())
 	    .then(() => engine.toText('星'))
