@@ -10,13 +10,13 @@
     start();
     function start() {
         document.getElementById('go').removeEventListener('click', start);
-        promise.then(() => engine.toText('魏'))
+        promise.then(() => engine.toText('璇'))
         .then(() => engine.shake())
-	    .then(() => engine.toText('老'))
+	    .then(() => engine.toText('璇'))
         .then(() => engine.shake())
-	    .then(() => engine.toText('师'))
+	    .then(() => engine.toText('你'))
         .then(() => engine.shake())
-	    .then(() => engine.toText('你就'))
+	    .then(() => engine.toText('就'))
         .then(() => engine.shake())
 	    .then(() => engine.toText('不要'))
         .then(() => engine.shake())
